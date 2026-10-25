@@ -1,16 +1,108 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# DevSpace — Blog Platform
 
-Currently, two official plugins are available:
+DevSpace is a responsive blog platform built with React. It allows users to explore articles across different technology categories and view individual blog details through a clean, modern interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Responsive blog card layout
+- Category-based article filtering
+- Individual blog detail pages
+- React Router navigation
+- Custom 404 Page Not Found screen
+- Mobile-friendly navigation menu
+- Modern UI with hover effects and styling
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- HTML5
+- CSS3
+- React Router DOM
+- Vite
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/harish12366/devspace-blog-platform.git
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd devspace-blog-platform
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+### 5. Build for production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── CategoryNavbar.jsx
+│   ├── BlogCard.jsx
+│   ├── BlogDetails.jsx
+│   └── NotFound.jsx
+├── data/
+│   └── BlogsData.js
+├── layouts/
+│   └── MainLayout.jsx
+├── pages/
+│   ├── HomePage.jsx
+│   └── CategoryPage.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+
+public/
+└── _redirects
+```
+
+## Deployment
+
+The application can be deployed using Netlify.
+
+Build command:
+
+```bash
+npm run build
+```
+
+Publish directory:
+
+```text
+dist
+```
+
+## Learning Outcomes
+
+- Building reusable React components
+- Passing and displaying data through props
+- Rendering lists using array methods
+- Implementing dynamic routes with React Router
+- Filtering content by category
+- Creating responsive layouts using CSS
+- Handling invalid routes with a custom 404 page
+
+
